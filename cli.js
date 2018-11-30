@@ -9,11 +9,11 @@ const validInputs = [
 ]
 
 // Input handlers
-e.on('man', function (str) {
+e.on('man', (str) => {
   console.log('You chose the man command')
 });
 
-e.on('help', function (str) {
+e.on('help', (str) => {
   e.emit('man')
 });
 
